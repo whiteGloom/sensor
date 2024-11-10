@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "baseUrl": "..",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "moduleResolution": "Node",
+    "useDefineForClassFields": true,
+    "plugins": [{
+        "name": "typescript-svelte-plugin",
+        // the following options can be set additionally; they are optional; their default values are listed here
+        "enabled": true, // enables this plugin
+        "assumeIsSvelteProject": false // if true, skip detection and always assume it's a Svelte project
+    }]
+  },
+}

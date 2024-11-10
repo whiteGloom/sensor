@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Sensor",
+  "version": "1.0",
+
+  "description": "Helps user collect data for streaming",
+  "permissions": ["tabs", "scripting", "storage"],
+
+  "action": {
+    "default_icon": "logo-32x32.png",
+    "default_title": "Sensor"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/watch*"],
+      "js": ["content/youtube.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background/index.js"],
+    "type": "module"
+  }
+}
